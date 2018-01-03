@@ -30,7 +30,7 @@ ipfs.on('ready', async () => {
 
   console.log('Connecting to database')
   const db = await orbitdb.open(remoteDB)
-
+  console.log('Database connected to'+remoteDB)
   db.events.on('replicated', () => {
     console.log('get entries...')
     const value = db.get('name')
