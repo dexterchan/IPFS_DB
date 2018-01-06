@@ -19,7 +19,7 @@ const ipfsOptions = {
   }
 }
 
-const remoteDB = '/orbitdb/QmfHTgYhiErKWsVBvABzVX631ciFiCzcPLa8DLjk9x1XtY/first-database'
+const remoteDB = '/orbitdb/QmTfvpfWwXiUhJof8nHX5aNJxfGBKndcqekYojrNjC74ph/first-database'
 
 // Create IPFS instance
 const ipfs = new IPFS(ipfsOptions)
