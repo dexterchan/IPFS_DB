@@ -41,6 +41,12 @@ ipfs.on('ready', async () => {
   console.log('DB keypair:\n' + db.key)
   console.log('DB public key:\n' + db.key.getPublic('hex'))
 
+ipfs.swarm.addrs(function (err, addrs) {
+  if (err) {
+    throw err
+  }
+  console.log(addrs)
+})
   // console.log('try insert entries....')
   // await db.put('name', 'hello')
 
